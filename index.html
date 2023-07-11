@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urna eletrónica - by: tondevpy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="urna">
+            <div class="tela">
+                <div class="d-1">
+                    <div class="d-1-left">
+                        <div class="d-1-1">
+                            <span>SEU VOTO PARA</span>
+                        </div>
+                        <div class="d-1-2">
+                            <span>VEREADOR</span>
+                        </div>
+                        <div class="d-1-3">
+                            
+                        </div>
+                        <div class="d-1-4">
+                            Nome: <br>
+                            Partido: <br>
+                            Vice-prefeito: <br>
+
+                        </div>
+                    </div>
+                    <div class="d-1-right">
+                        <div class="d1-image">
+                            <img src="./imagens/bart.png" alt="" id="foto01">
+                            PREFEITO
+                        </div>
+                        <div class="d1-image">
+                            <img src="./imagens/burns.png" alt="">
+                            VICE-PREFEITO
+                        </div>
+                    </div>
+                </div>
+                <div class="d-2">
+                    Aperte a tecla: <br>
+                    Confirma para CONFIRMAR o voto <br>
+                    CORRIGE para reiniciar o voto
+                </div>
+            </div>
+            <div class="teclado">
+                <button class="btn-number-urna" onclick="clicou(1)">1</button>
+                <button class="btn-number-urna" onclick="clicou(2)">2</button>
+                <button class="btn-number-urna" onclick="clicou(3)">3</button>
+                <br>
+                <button class="btn-number-urna" onclick="clicou(4)">4</button>
+                <button class="btn-number-urna" onclick="clicou(5)">5</button>
+                <button class="btn-number-urna" onclick="clicou(6)">6</button>
+                <br>
+                <button class="btn-number-urna" onclick="clicou(7)">7</button>
+                <button class="btn-number-urna" onclick="clicou(8)">8</button>
+                <button class="btn-number-urna" onclick="clicou(9)">9</button>
+                <br>
+                <button class="btn-number-urna" onclick="clicou(0)">0</button>
+
+                <br>
+                <br>
+                <button class="btn-action branco" onclick="branco(0)">BRANCO</button>
+                <button class="btn-action laranja" onclick="corrige(0)">CORRIGE</button>
+                <button class="btn-action verde" id="confirmar" onclick="confirma(0)">CONFIRMA</button>
+            </div>
+        </div>
+    </div>
+    <script src="./etapas.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
